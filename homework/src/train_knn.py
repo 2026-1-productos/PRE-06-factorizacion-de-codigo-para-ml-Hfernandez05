@@ -1,16 +1,9 @@
-#
-# Busque los mejores parametros de un modelo knn para predecir
-# la calidad del vino usando el dataset de calidad del vino tinto de UCI.
-#
-# Considere diferentes valores para la cantidad de vecinos
-#
-
-# importacion de librerias
 from sklearn.neighbors import KNeighborsRegressor
 
 from ._internals.calculate_metrics import calculate_metrics
 from ._internals.prepare_data import prepare_data
 from ._internals.print_metrics import print_metrics
+from ._internals.run_experiment import run_experiment
 from ._internals.save_model import save_model
 
 x_train, x_test, y_train, y_test = prepare_data()

@@ -11,10 +11,10 @@
 # importacion de librerias
 from sklearn.linear_model import ElasticNet
 
-from ._internals.calculate_metrics import calculate_metrics
-from ._internals.prepare_data import prepare_data
-from ._internals.print_metrics import print_metrics
-from ._internals.save_model import save_model
+from ._internals_.calculate_metrics import calculate_metrics
+from ._internals_.prepare_data import prepare_data
+from ._internals_.print_metrics import print_metrics
+from ._internals_.save_model import save_model
 
 x_train, x_test, y_train, y_test = prepare_data()
 
